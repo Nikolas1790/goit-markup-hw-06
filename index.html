@@ -449,7 +449,6 @@
                 class="modal-input"
                 minlength="2"
                 required
-                placeholder="Enter you name*"
                 title="Benjamin Franklin"
                 id="user-name"
               />
@@ -466,7 +465,6 @@
                 name="user-tel"
                 class="modal-input"
                 required
-                placeholder="Enter you tel*"
                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                 title="+380 (00) 000-00-00"
                 id="user-tel"
@@ -484,7 +482,6 @@
                 name="user-emeil"
                 class="modal-input"
                 required
-                placeholder="Enter you emeil*"
                 title="goit@gmail.com"
                 id="user-emeil"
               />
@@ -501,7 +498,12 @@
             class="modal-textarea"
             placeholder="Text input"
           ></textarea>
-          <input id="modal-form-chrck" type="text" class="modal-form-chrck" />
+          <input
+            id="modal-form-chrck"
+            name="user-policy"
+            type="checkbox"
+            class="modal-form-chrck"
+          />
           <label for="modal-form-chrck" class="modal-form-chrck-desc"
             >I accept the terms and conditions of the
             <a href="">Privacy Policy</a></label
