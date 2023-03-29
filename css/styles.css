@@ -702,6 +702,10 @@ body {
   color: var(--secondary-text-color);
 }
 /* ===form=== */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
 .modal-field {
   margin-bottom: 8px;
 }
@@ -715,6 +719,7 @@ body {
 
   color: var(--secondary-text-color);
   outline: transparent;
+  transition: border-color var(--transition-dur-func);
 }
 .modal-input:focus {
   border-color: var(--blue-text-color);
@@ -742,6 +747,7 @@ body {
   top: 50%;
   left: 16px;
   transform: translatey(-50%);
+  transition: fill var(--transition-dur-func);
 }
 .modal-textarea {
   width: 100%;
@@ -751,8 +757,9 @@ body {
   background-color: transparent;
   resize: none;
   padding: 8px 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   outline: transparent;
+  transition: border-color var(--transition-dur-func);
 }
 .modal-textarea:focus {
   border-color: var(--blue-text-color);
@@ -764,19 +771,71 @@ body {
 
   color: rgba(46, 47, 66, 0.4);
 }
+.modal-form-chrck-desc {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+/* .modal-form-chrck-desc::before {
+  display: block;
 
-/* .modal-submit-btn {
-  display: ;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  content: " ";
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color var(--transition-dur-func),
+    border var(--transition-dur-func);
+} */
+/* .modal-form-chrck:checked + .modal-form-chrck-desc::before {
+  background-color: var(--push-btn-portfolio);
+  border: 1px solid var(--push-btn-portfolio);
+  background-image: url(../images/selection-mark/select.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+} */
+/* .modal-form-chrck:focus + .modal-form-chrck-desc::before {
+  outline: 1px solid var(--push-btn-portfolio);
+} */
+.modal-form-chrck-yes {
+  fill: var(--color-white-fff);
+  /* opacity: 0; */
+}
+.modal-form-chrck:checked + .modal-form-chrck-yes {
+  opacity: 1;
+}
 
-  width: 169px;
+.modal-form-chrck-link {
+  color: var(--blue-text-color);
+}
+
+.modal-submit-btn {
+  align-self: center;
+  text-align: center;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
-
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--color-white-fff);
-  background: var(--blue-text-color);
+  background-color: var(--blue-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-} */
+  border-color: transparent;
+  transition: background-color var(--transition-dur-func);
+}
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: var(--push-btn-portfolio);
+}
 
 /* ===/form=== */
-/* ============= /backdrop =============*/
