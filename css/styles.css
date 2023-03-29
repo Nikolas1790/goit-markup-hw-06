@@ -702,6 +702,9 @@ body {
   color: var(--secondary-text-color);
 }
 /* ===form=== */
+.modal-field {
+  margin-bottom: 4px;
+}
 .modal-input {
   width: 100%;
   height: 40px;
@@ -710,10 +713,26 @@ body {
   margin-bottom: 8px;
 
   padding-left: 34px;
-  font-size: 18px;
+  /* font-size: 18px; */
   color: var(--secondary-text-color);
 }
-.modal-submit-btn {
+
+.modal-label-text {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.modal-input-field {
+  position: relative;
+}
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translatey(-50%);
+}
+/* .modal-submit-btn {
   display: ;
 
   width: 169px;
@@ -724,6 +743,7 @@ body {
   background: var(--blue-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
+} */
+
 /* ===/form=== */
 /* ============= /backdrop =============*/
