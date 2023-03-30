@@ -61,7 +61,7 @@
       <section class="hero">
         <div class="coteiner hero-class">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button" data-modal-open>
+          <button class="hero-btn" data-modal-open type="button">
             Order Service
           </button>
         </div>
@@ -429,9 +429,30 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-div">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form>
+            <div class="footer-subscribe-emeil-submit">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="footer-subscribe-input"
+                name="footer-subscribe-input"
+                required
+                title="goit@gmail.com"
+              />
+              <button type="submit" class="footer-subscribe-btn">
+                Subscribe
+                <svg class="footer-subscribe-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Frame"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -494,6 +515,7 @@
           <label for="user-comment" class="modal-label-text">Comment</label>
           <textarea
             name="user-comment"
+            type="text"
             id="user-comment"
             class="modal-textarea"
             placeholder="Text input"
@@ -504,6 +526,7 @@
               name="user-policy"
               type="checkbox"
               class="modal-form-chrck hidden"
+              required
             />
             <label for="modal-form-chrck" class="modal-form-chrck-desc">
               <svg class="modal-form-chrck-yes" width="16" height="16">

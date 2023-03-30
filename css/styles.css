@@ -569,9 +569,6 @@ body {
   background-color: var(--color-hero-bckg);
 }
 
-/* .footer-section {
-  padding: 100px 0;
-} */
 .footer-main-block {
   display: flex;
 }
@@ -591,6 +588,7 @@ body {
 .footer-social-block {
   width: 208px;
   height: 80px;
+  margin-right: 80px;
 }
 .footer-social-media {
   font-weight: 500;
@@ -630,7 +628,67 @@ body {
 .footer-list-svg {
   fill: var(--grey-cornflower);
 }
+/* =============subscribe-div =============*/
+.footer-subscribe-div {
+  width: 453px;
+  height: 80px;
+}
+.footer-subscribe-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white-fff);
+  margin-bottom: 16px;
+}
+.footer-subscribe-emeil-submit {
+  display: flex;
+  align-items: center;
+}
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--color-white-fff);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--color-white-fff);
+  background-color: transparent;
+  padding: 8px 16px;
+  margin-right: 24px;
+}
+.footer-subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--color-white-fff);
+}
+.footer-subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 24px;
+  color: var(--color-white-fff);
+  background-color: var(--blue-text-color);
+  border-radius: 4px;
+  border-color: transparent;
+  transition: background-color var(--transition-dur-func);
+}
 
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: var(--push-btn-portfolio);
+}
+.footer-subscribe-plaim {
+}
+.footer-subscribe-svg {
+}
+/* =============/subscribe-div =============*/
 /*------------- /footer -----------------*/
 
 /* ============= backdrop =============*/
@@ -789,8 +847,10 @@ body {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  outline: 1px solid transparent;
+  background-origin: border-box;
   transition: background-color var(--transition-dur-func),
-    border var(--transition-dur-func);
+    border var(--transition-dur-func), outline var(--transition-dur-func);
 }
 .modal-form-chrck:checked + * .modal-form-chrck-yes {
   background-color: var(--push-btn-portfolio);
