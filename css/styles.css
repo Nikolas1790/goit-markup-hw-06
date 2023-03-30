@@ -686,6 +686,7 @@ body {
   background-color: var(--push-btn-portfolio);
   border: 1px solid transparent;
 }
+
 .modal-close-btn-icon {
   transition: fill var(--transition-dur-func);
 }
@@ -771,45 +772,33 @@ body {
 
   color: rgba(46, 47, 66, 0.4);
 }
+
+.modal-form-chrck-div {
+  margin-bottom: 24px;
+}
 .modal-form-chrck-desc {
   display: flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  margin-bottom: 24px;
 }
-/* .modal-form-chrck-desc::before {
-  display: block;
 
-  width: 16px;
-  height: 16px;
+.modal-form-chrck-yes {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  content: " ";
   cursor: pointer;
   margin-right: 8px;
   transition: background-color var(--transition-dur-func),
     border var(--transition-dur-func);
-} */
-/* .modal-form-chrck:checked + .modal-form-chrck-desc::before {
+}
+.modal-form-chrck:checked + * .modal-form-chrck-yes {
   background-color: var(--push-btn-portfolio);
   border: 1px solid var(--push-btn-portfolio);
-  background-image: url(../images/selection-mark/select.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
-} */
-/* .modal-form-chrck:focus + .modal-form-chrck-desc::before {
-  outline: 1px solid var(--push-btn-portfolio);
-} */
-.modal-form-chrck-yes {
-  fill: var(--color-white-fff);
-  /* opacity: 0; */
 }
-.modal-form-chrck:checked + .modal-form-chrck-yes {
-  opacity: 1;
+.modal-form-chrck:focus + * .modal-form-chrck-yes {
+  outline: 1px solid var(--push-btn-portfolio);
+  /* border: 1px solid var(--push-btn-portfolio); */
 }
 
 .modal-form-chrck-link {

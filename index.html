@@ -498,23 +498,26 @@
             class="modal-textarea"
             placeholder="Text input"
           ></textarea>
-          <input
-            id="modal-form-chrck"
-            name="user-policy"
-            type="checkbox"
-            class="modal-form-chrck hidden"
-          />
-
-          <svg class="modal-form-chrck-yes" width="16" height="16">
-            <use href="./images/icons.svg#icon-Property-Default"></use>
-          </svg>
-          <label for="modal-form-chrck" class="modal-form-chrck-desc"
-            >I accept the terms and conditions of the&nbsp;<a
-              href=""
-              class="modal-form-chrck-link"
-              >Privacy Policy</a
-            ></label
-          >
+          <div class="modal-form-chrck-div">
+            <input
+              id="modal-form-chrck"
+              name="user-policy"
+              type="checkbox"
+              class="modal-form-chrck hidden"
+            />
+            <label for="modal-form-chrck" class="modal-form-chrck-desc">
+              <svg class="modal-form-chrck-yes" width="16" height="16">
+                <use href="./images/icons.svg#icon-Property-Default"></use>
+              </svg>
+              <span class="modal-form-chrck-span">
+                I accept the terms and conditions of the&nbsp;<a
+                  href=""
+                  class="modal-form-chrck-link"
+                  >Privacy Policy</a
+                >
+              </span>
+            </label>
+          </div>
 
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
