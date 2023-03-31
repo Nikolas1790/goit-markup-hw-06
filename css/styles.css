@@ -630,8 +630,6 @@ body {
 }
 /* =============subscribe-div =============*/
 .footer-subscribe-div {
-  width: 453px;
-  height: 80px;
 }
 .footer-subscribe-title {
   font-weight: 500;
@@ -794,6 +792,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--grey-universal);
+  margin-bottom: 4px;
 }
 .modal-field > .modal-label-text {
   letter-spacing: 0.04em;
